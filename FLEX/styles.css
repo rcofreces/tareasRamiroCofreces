@@ -1,0 +1,182 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.bloque1 {
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: grey;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 75px;
+}
+
+.encabezado {
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    order: 1;
+    width: 50%;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.menu1 {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border: 2px solid black;
+    background-color: green;
+    padding-left: 30px;
+    margin-right: 10px;
+    width: 40%;
+    height: 25px;
+    order: 2;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border: 2px solid black;
+    background-color: blue;
+    width: 25%;
+    height: 25px;
+    padding-left: 10px;
+    order: 3;
+    margin-left: 20px;
+    margin-top: -15px;
+}
+
+.menu2 {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border: 2px solid black;
+    background-color: brown;
+    padding-left: 5px;
+    order: 3;
+    width: 64%;
+    height: 25px;
+    margin-top: -15px;
+    margin-right: 10px;
+}
+
+.bloque2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 175px;
+    margin-top: -17.5px;
+}
+
+.izquierda {
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 31.5%;
+    background-color: rgb(83, 83, 83);
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.centro {
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 31.5%;
+    background-color: darkcyan;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.derecha {
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 31.5%;
+    background-color: rgb(255, 149, 0);
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.bloque3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 175px;
+    margin-top: -30px;
+}
+
+.izquierda2 {
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 72%;
+    background-color: rgb(0, 60, 0);
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.derecha2 {
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 24.7%;
+    background-color: rgb(143, 60, 0);
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.bloque4 {
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: rgb(0, 225, 250);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 75px;
+    margin-top: -12.5px;
+}
+
+.pie {
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.elemento {
+    display: flex;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background-color: blue;
+    margin-right: 25px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
