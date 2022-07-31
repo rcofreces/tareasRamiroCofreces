@@ -1,0 +1,25 @@
+body {
+    font-family: tahoma;
+    font-size: 12px;
+    background-color: lightgrey;
+  }
+  
+  p {
+    text-align: justify;
+  }
+  
+  .imagenes {
+    text-align: center;
+  }
+  
+  .lista1 {
+    list-style-type: lower-alpha;
+  }
+  
+  .negrita {
+    font-weight: bold;
+  }
+  
+  .subrayado {
+    text-decoration: underline;
+  }
