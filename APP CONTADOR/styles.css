@@ -1,0 +1,42 @@
+.titulo {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.resultado {
+    margin-left: 10px;
+    width: 150px;
+    height: 30px;
+}
+
+.decrementar {
+    background-color: blue;
+    font-weight: bold;
+    color: white;
+    border: 3px solid blue;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.incrementar {
+    background-color: blue;
+    font-weight: bold;
+    color: white;
+    border: 3px solid blue;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.sumarDeA {
+    background-color: rgb(255, 157, 0);
+    font-weight: bold;
+    color: white;
+    border: 3px solid rgb(255, 157, 0);
+    border-radius: 5px;
+    height: 40px;
+}
+
+.parametro {
+    width: 150px;
+    height: 40px;
+}
