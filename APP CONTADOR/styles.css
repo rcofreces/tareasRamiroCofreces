@@ -7,16 +7,7 @@
     margin-left: 10px;
 }
 
-.decrementar {
-    background-color: blue;
-    font-weight: bold;
-    color: white;
-    border: 3px solid blue;
-    border-radius: 5px;
-    height: 40px;
-}
-
-.incrementar {
+.decrementar, .incrementar {
     background-color: blue;
     font-weight: bold;
     color: white;
