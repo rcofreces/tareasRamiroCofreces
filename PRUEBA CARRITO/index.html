@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h5>INGRESE UN PRODUCTO</h5>
+            <input type="text" class="nombreProducto" id="producto" placeholder="Ingrese aquí el producto">
+        </div>
+        <div>
+            <h5>INGRESE UN PRECIO</h5>
+            <input type="text" class="precioProducto" id="precio" placeholder="Ingrese aquí el precio">
+        </div>
+        <div>
+            <button type="button" class="agregarProducto" id="button1">Agregar Producto (+)</button>
+            <button type="button" class="eliminarUltimo" id="button2" >Quitar Último Producto (-)</button>
+            <button type="button" class="eliminarTodos" id="button3">Borrar Carrito</button>
+            <button type="button" class="calcularCompra" id="button4">Calcular Compra</button>
+        </div>
+        <div>
+            <ol id="lista">              
+            </ol>
+        </div>
+        <div>
+            <h2>LA COMPRA TOTAL ES DE: $<span id="total"></span></h2>
+        </div>
+    </div>
+    <script text="javascript" src="index.js"></script>
+</body>
+</html>
+
++ Además del nombre y precio del producto, tener la posibilidad de agregar la cantidad y con esto el subtotal $ por producto.
++ Hacer que el total de la compra se vaya actualizando automáticamente a medida que vamos agregando productos.
++ Crear una homepage con los productos disponibles presentados por ejemplo como tarjetas y que estas cuenten con un botón para agregar el producto al carrito de compras. Adicionalmente estas tarjetas podrían contener una imagen del producto.
++ Utilizar Bootstrap
++ Que la aplicación web sea responsive.
