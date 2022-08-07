@@ -9,34 +9,33 @@
 </head>
 <body>
     <div class="container">
-        <div>
-            <h5>INGRESE UN PRODUCTO</h5>
+        <div class="producto">
+            <h3><span class="underline">INGRESE UN PRODUCTO:</span></h3>
             <input type="text" class="nombreProducto" id="producto" placeholder="Ingrese aquí el producto">
         </div>
-        <div>
-            <h5>INGRESE UN PRECIO</h5>
-            <input type="text" class="precioProducto" id="precio" placeholder="Ingrese aquí el precio">
+        <div class="cantidad">
+            <h3><span class="underline">INGRESE UNA CANTIDAD:</span></h3>
+            <input type="number" class="cantidadProducto" id="cantidad" placeholder="Ingrese aquí la cantidad">
+        </div>
+        <div class="precio">
+            <h3><span class="underline">INGRESE UN PRECIO:</span></h3>
+            <input type="number" class="precioProducto" id="precio" placeholder="Ingrese aquí el precio">
         </div>
         <div>
             <button type="button" class="agregarProducto" id="button1">Agregar Producto (+)</button>
-            <button type="button" class="eliminarUltimo" id="button2" >Quitar Último Producto (-)</button>
+            <button type="button" class="eliminarUltimo" id="button2" >Quitar Producto (-)</button>
             <button type="button" class="eliminarTodos" id="button3">Borrar Carrito</button>
             <button type="button" class="calcularCompra" id="button4">Calcular Compra</button>
         </div>
         <div>
-            <ol id="lista">              
+            <ol id="lista">
+                <li></li>              
             </ol>
         </div>
         <div>
-            <h2>LA COMPRA TOTAL ES DE: $<span id="total"></span></h2>
+            <h3>LA COMPRA TOTAL ES DE: $<span id="total"></span></h3>
         </div>
     </div>
     <script text="javascript" src="index.js"></script>
 </body>
 </html>
-
-+ Además del nombre y precio del producto, tener la posibilidad de agregar la cantidad y con esto el subtotal $ por producto.
-+ Hacer que el total de la compra se vaya actualizando automáticamente a medida que vamos agregando productos.
-+ Crear una homepage con los productos disponibles presentados por ejemplo como tarjetas y que estas cuenten con un botón para agregar el producto al carrito de compras. Adicionalmente estas tarjetas podrían contener una imagen del producto.
-+ Utilizar Bootstrap
-+ Que la aplicación web sea responsive.

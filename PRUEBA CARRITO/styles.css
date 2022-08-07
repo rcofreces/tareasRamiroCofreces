@@ -1,0 +1,61 @@
+.container {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.producto, .precio, .cantidad {
+    display: flex;
+}
+
+.nombreProducto, .cantidadProducto, .precioProducto {
+    height: 30px;
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 0, 136);
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+input::placeholder {
+    font-size: 13px;
+    color: rgb(136, 136, 136);
+
+}
+
+input[type]:focus {
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 2px rgb(255, 0, 136);
+    outline: none;
+}
+
+.nombreProducto {
+    margin-left: 30px;  
+}
+
+.cantidadProducto {
+    margin-left: 25px;    
+}
+
+.precioProducto {
+    margin-left: 58px;       
+}
+
+.agregarProducto, .eliminarUltimo, .eliminarTodos, .calcularCompra {
+    color:rgb(255, 0, 136);
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: black;
+    font-weight: bold;
+    font-size: 14px;
+    height: 50px;
+    width: 100px;
+    margin-right: 16px;
+}
+/*
+#lista {
+}
+*/
