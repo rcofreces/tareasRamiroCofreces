@@ -38,3 +38,6 @@ botonAgregar.addEventListener("click", agregar);
 botonEliminarUltimo.addEventListener("click", eliminarUltimo);
 botonEliminarTodos.addEventListener("click", eliminarTodos);
 botonCalcularCompra.addEventListener("click", calcularCompra);
+
+
+const myItem = document.createElement("li");
