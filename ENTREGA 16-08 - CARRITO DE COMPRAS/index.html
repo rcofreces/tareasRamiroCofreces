@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MI CARRITO DE COMPRAS</h1>
+        <div class="producto">
+            <h3><span class="underline">INGRESE UN PRODUCTO:</span></h3>
+            <input type="text" name="inputProducto" class="miInputProducto" placeholder="Ingrese aquí un producto">
+        </div>
+        <div class="cantidad">
+            <h3><span class="underline">INGRESE UNA CANTIDAD:</span></h3>
+            <input type="number" name="inputCantidad" class="miInputCantidad" placeholder="Ingrese aquí la cantidad">
+        </div>
+        <div class="precio">
+            <h3><span class="underline">INGRESE UN PRECIO:</span></h3>
+            <input type="number" name="inputPrecio" class="miInputPrecio" placeholder="Ingrese aquí un precio">
+        </div>
+        <div>
+            <button type="button" class="agregarProducto">Agregar un Producto (+)</button>
+            <button type="button" class="eliminarUltimo">Eliminar Último Producto (-)</button>
+            <button type="button" class="vaciarCarrito">Vaciar Carrito</button>
+            <button type="button" class="calcularCompra">Calcular Compra</button>
+        </div>
+        <div>
+            <button type="button" class="eliminarOrden">Eliminar la tarea en orden:</button>
+            <input type="number" name="inputOrden" class="miInputOrden" placeholder="Nº de orden a eliminar">
+        </div>
+        <div>       
+            <h2>Listado del Carrito</h2>
+            <ol class="miLista">     
+            </ol>
+        </div>
+        <div>
+            <h3>LA COMPRA TOTAL ES DE: $<span class="compraTotal"></span></h3>
+        </div>
+    </div>
+    <script text="javascript" src="index.js"></script>
+</body>
+</html>
