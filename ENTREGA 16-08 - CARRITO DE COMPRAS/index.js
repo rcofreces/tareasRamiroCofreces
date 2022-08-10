@@ -3,6 +3,7 @@ let miCantidad = document.querySelector(".myInputCantidad");
 let miPrecio = document.querySelector(".myInputPrecio");
 let miOrden = document.querySelector(".myInputOrden");
 let miLista = document.querySelector(".myList");
+let miSubspan = document.querySelector(".compraSubtotal");
 let miSpan = document.querySelector(".compraTotal");
 
 let arrayProductos = [];
@@ -19,6 +20,7 @@ let agregarAlCarrito = () => {
     let miItem = document.createElement("li");
     miItem.innerHTML = "Cantidad: " + cantidad + " | Producto: " + producto + " | Precio Unitario: $" + precio;
     miLista.appendChild(miItem);
+    calcularSubcompra();
     miProducto.value = "";
     miCantidad.value = "";
     miPrecio.value = "";
@@ -36,6 +38,14 @@ let vaciarCarrito = () => {
     arrayPrecios= [];
     arrayCantidadProductos = [];
     miLista.innerHTML = "";
+}
+
+let calcularSubcompra = () => {
+    let total = 0;
+    for (let i = 0; i < arrayProductos.length; i++) {
+        total = total + parseInt((arrayPrecios[i] * arrayCantidadProductos[i]));
+    }
+    miSubspan.innerHTML = total;
 }
 
 let calcularCompra = () => {
