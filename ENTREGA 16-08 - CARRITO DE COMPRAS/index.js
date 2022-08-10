@@ -10,12 +10,14 @@ let arrayPrecios = [];
 let arrayCantidadProductos = [];
 
 let agregarAlCarrito = () => {
-    console.log("ingresa")
-    arrayProductos.push(miProducto);
-    arrayPrecios.push(miPrecio);
-    arrayCantidadProductos.push(miCantidad);
+    let producto = document.querySelector(".myInputProducto").value;
+    arrayProductos.push(producto);
+    let precio = parseInt(document.querySelector(".myInputPrecio").value);
+    arrayPrecios.push(precio);
+    let cantidad = parseInt(document.querySelector(".myInputCantidad").value);
+    arrayCantidadProductos.push(cantidad);
     let miItem = document.createElement("li");
-    miItem.innerHTML = "Cantidad: " + miCantidad.value + " | Producto: " + miProducto.value + " | Precio: $" + miPrecio.value;
+    miItem.innerHTML = "Cantidad: " + cantidad + " | Producto: " + producto + " | Precio Unitario: $" + precio;
     miLista.appendChild(miItem);
     miProducto.value = "";
     miCantidad.value = "";
@@ -39,7 +41,7 @@ let vaciarCarrito = () => {
 let calcularCompra = () => {
     let total = 0;
     for (let i = 0; i < arrayProductos.length; i++) {
-        total = total + (arrayPrecios[i] * arrayCantidadProductos[i]);
+        total = total + parseInt((arrayPrecios[i] * arrayCantidadProductos[i]));
     }
     miSpan.innerHTML = total;
 }
