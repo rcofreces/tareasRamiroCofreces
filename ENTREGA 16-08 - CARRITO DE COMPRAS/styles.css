@@ -1,18 +1,52 @@
 .container {
     font-family: Verdana;
     font-size: 14px;
+    background-color: rgb(0, 16, 75);
+    color: rgb(94, 255, 41);
 }
 
 .row, .row-1, .row-2{
     display: flex;
 }
 
-.col, .col-1, .col-2, .col-img{
-    
+/*.col, .col-1, .col-2, .col-img{    
+}*/
+
+.navbar {
+    background-color: rgb(0, 16, 75);
+}
+
+.navbar-brand {
+    color:white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.navbar-brand:hover {
+    color: rgb(94, 255, 41);
+}
+
+.icono {
+    height: 25px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-header {
+    margin-left: 75px;
+}
+
+.btn {
+    color: rgb(94, 255, 41);
+}
+
+.btn:hover {
+    color: rgb(94, 255, 41);
+    border-color: rgb(94, 255, 41);
 }
 
 /*
-
 
 .underline {
     text-decoration: underline;
@@ -67,4 +101,5 @@ input[type]:focus {
     width: 100px;
     margin-right: 16px;
 }
+
 */
