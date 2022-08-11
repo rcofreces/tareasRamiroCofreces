@@ -1,7 +1,18 @@
-/*
 .container {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Verdana;
+    font-size: 14px;
 }
+
+.row, .row-1, .row-2{
+    display: flex;
+}
+
+.col, .col-1, .col-2, .col-img{
+    
+}
+
+/*
+
 
 .underline {
     text-decoration: underline;
