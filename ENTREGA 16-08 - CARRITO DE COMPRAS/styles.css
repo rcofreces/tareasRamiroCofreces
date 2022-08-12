@@ -1,16 +1,15 @@
 .container {
     font-family: Verdana;
     font-size: 14px;
-    background-color: rgb(0, 16, 75);
-    color: rgb(94, 255, 41);
 }
+/* HEADER */
 
-.row, .row-1, .row-2{
+.col-snowflake, .col-btn-header, .col-search, .col-drop {
     display: flex;
+    background-color:rgb(0, 16, 75);
+    color:rgb(94, 255, 41);
+    border-bottom: 3px solid rgb(94, 255, 41);
 }
-
-/*.col, .col-1, .col-2, .col-img{    
-}*/
 
 .navbar {
     background-color: rgb(0, 16, 75);
@@ -20,7 +19,7 @@
     color:white;
     font-style: italic;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 40px;
 }
 
 .navbar-brand:hover {
@@ -34,37 +33,63 @@
 }
 
 .btn-header {
-    margin-left: 75px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.btn {
+.btn-home {
+    background-color:rgb(0, 16, 75);
     color: rgb(94, 255, 41);
+    font-size: 16px;
+    font-weight: bold;
+    border: rgb(0, 16, 75);
+    margin: 6px;
 }
 
-.btn:hover {
+.form-control {
+    width: 220px;
+    text-align: start;
+}
+
+.btn-search {
+    background-color:rgb(0, 16, 75);
     color: rgb(94, 255, 41);
-    border-color: rgb(94, 255, 41);
+    border: rgb(0, 16, 75);
 }
 
-/*
-
-.underline {
-    text-decoration: underline;
+::placeholder {
+    text-align: right;
 }
 
-.producto, .precio, .cantidad {
+.dropdown {
     display: flex;
 }
 
-.nombreProducto, .cantidadProducto, .precioProducto {
-    height: 30px;
-    width: 200px;
-    margin-top: 10px;
-    border-radius: 10px;
-    border: 2px solid rgb(255, 0, 136);
-    padding-left: 20px;
-    font-size: 16px;
+.btn-user {
+    background-color:rgb(0, 16, 75);
+    color: rgb(94, 255, 41);
+    border: rgb(0, 16, 75);
+    margin-left: 125px;
 }
+
+.dropdown-menu {
+    background-color: rgb(0, 16, 75);
+    border: 2px solid rgb(94, 255, 41);
+    border-radius: 10px;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(0, 16, 75);
+    color:rgb(94, 255, 41)
+}
+
+/* CARRITO DE COMPRAS */
+
+/*
 
 input::placeholder {
     font-size: 13px;
@@ -78,28 +103,41 @@ input[type]:focus {
     outline: none;
 }
 
-.nombreProducto {
-    margin-left: 30px;  
+*/
+
+/* FOOTER */
+
+.row-footer {
+    display: flex;
+    background-color:rgb(0, 16, 75);
+    color:rgb(94, 255, 41);
+    border-top: 3px solid rgb(94, 255, 41);
 }
 
-.cantidadProducto {
-    margin-left: 25px;    
-}
-
-.precioProducto {
-    margin-left: 58px;       
-}
-
-.agregarProducto, .eliminarUltimo, .eliminarTodos, .calcularCompra {
-    color:rgb(255, 0, 136);
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: black;
+.col-owner {
+    color: rgb(94, 255, 41);
+    padding-top: 20px;
+    justify-content: left;
     font-weight: bold;
     font-size: 14px;
-    height: 50px;
-    width: 100px;
-    margin-right: 16px;
 }
 
-*/
+.col-contacto {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(94, 255, 41);
+    height: 100%;
+    padding-top: 20px;
+}
+
+.col-redes {
+    color: rgb(94, 255, 41);
+    padding-top: 20px;
+}
+
+.nav {
+    justify-content: space-evenly;
+    margin-right: 20px;
+    margin-left: 175px;
+}
