@@ -111,12 +111,15 @@ body {
     background-color: rgb(0, 16, 75);
     margin-left: 10px;
     margin-top: 10px;
+    border: 1px solid rgb(94, 255, 41);
+    opacity: .7;
+    border-radius: 5px;
 }
 
 .myInputProducto::placeholder, .myInputPrecio::placeholder, .myInputCantidad::placeholder {
     text-align: start;
     color: white;
-    opacity: .5;
+    opacity: .7;
 }
 
 .myInputProducto[type]:focus, .myInputPrecio[type]:focus, .myInputCantidad[type]:focus {
@@ -127,9 +130,8 @@ body {
 
 .col-2 {
     margin: auto;
-    
 }
-.agregarProducto, .agregarProducto2 {
+.agregarProducto, .agregarProducto2, .agregarProducto3, .agregarProducto4 {
     background-color:rgb(0, 16, 75);
     color: rgb(94, 255, 41);
     font-weight: bold;
@@ -183,6 +185,9 @@ body {
     color: white;
     background-color: rgb(0, 16, 75);
     margin-left: 10px;
+    border: 1px solid rgb(94, 255, 41);
+    opacity: .7;
+    border-radius: 5px;
 }
 
 .myInputOrden::placeholder {

@@ -24,6 +24,42 @@ let agregarAlCarrito = () => {
     miPrecio.value = "";
 }
 
+let agregarAlCarrito2 = () => {
+    let producto = "Esquí Atomic Rojo"
+    arrayProductos.push(producto);
+    let precio = parseInt(500);
+    arrayPrecios.push(precio);
+    let cantidad = parseInt(1)
+    arrayCantidadProductos.push(cantidad);
+    let miItem = document.createElement("li");
+    miItem.innerHTML = "Cantidad: " + cantidad + " | Producto: " + producto + " | Precio Unitario: $" + precio + " | Subtotal: $" + precio*cantidad;
+    miLista.appendChild(miItem);
+}
+
+let agregarAlCarrito3 = () => {
+    let producto = "Botas Fischer Amarillas"
+    arrayProductos.push(producto);
+    let precio = parseInt(350);
+    arrayPrecios.push(precio);
+    let cantidad = parseInt(1)
+    arrayCantidadProductos.push(cantidad);
+    let miItem = document.createElement("li");
+    miItem.innerHTML = "Cantidad: " + cantidad + " | Producto: " + producto + " | Precio Unitario: $" + precio + " | Subtotal: $" + precio*cantidad;
+    miLista.appendChild(miItem);
+}
+
+let agregarAlCarrito4 = () => {
+    let producto = "Esquí Head Verde"
+    arrayProductos.push(producto);
+    let precio = parseInt(575);
+    arrayPrecios.push(precio);
+    let cantidad = parseInt(1)
+    arrayCantidadProductos.push(cantidad);
+    let miItem = document.createElement("li");
+    miItem.innerHTML = "Cantidad: " + cantidad + " | Producto: " + producto + " | Precio Unitario: $" + precio + " | Subtotal: $" + precio*cantidad;
+    miLista.appendChild(miItem);
+}
+
 let eliminarUltimo = () => {
     arrayProductos.pop();
     arrayPrecios.pop();
@@ -54,6 +90,12 @@ let eliminarPorOrden = () => {
 
 let botonAgregar = document.querySelector(".agregarProducto");
 botonAgregar.addEventListener("click", agregarAlCarrito);
+let botonAgregar2 = document.querySelector(".agregarProducto2");
+botonAgregar2.addEventListener("click", agregarAlCarrito2);
+let botonAgregar3 = document.querySelector(".agregarProducto3");
+botonAgregar3.addEventListener("click", agregarAlCarrito3);
+let botonAgregar4 = document.querySelector(".agregarProducto4");
+botonAgregar4.addEventListener("click", agregarAlCarrito4);
 let botonEliminarUltimo = document.querySelector(".eliminarUltimo");
 botonEliminarUltimo.addEventListener("click", eliminarUltimo);
 let botonVaciar = document.querySelector(".vaciarCarrito");
