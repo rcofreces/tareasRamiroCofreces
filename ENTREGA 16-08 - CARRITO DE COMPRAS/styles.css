@@ -120,6 +120,7 @@ body {
     text-align: start;
     color: white;
     opacity: .7;
+    padding-left: 10px;
 }
 
 .myInputProducto[type]:focus, .myInputPrecio[type]:focus, .myInputCantidad[type]:focus {
@@ -194,6 +195,7 @@ body {
     text-align: start;
     color: white;
     opacity: .5;
+    padding-left: 10px;
 }
 
 .myInputOrden[type]:focus {
