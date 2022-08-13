@@ -81,9 +81,9 @@
             </div>
         </div>
         <!-- CARRITO DE COMPRAS -->
-        <div class="row">
+        <div class="row-carrito">
             <div class="col col-lg-8">
-                <div class="row-1">
+                <div class="row-inputs">
                     <div class="col-1 col-lg-8">
                         <div class="producto">
                             <input type="text" name="inputProducto" class="myInputProducto" placeholder="Ingrese aquí un producto">
@@ -96,58 +96,66 @@
                         </div>
                     </div>
                     <div class="col-2 col-lg-4">
-                        <button type="button" class="agregarProducto">Agregar un Producto (+)</button>
+                        <button type="button" class="agregarProducto">Agregar al Carrito</button>
                     </div>
                 </div>
-                <div class="row-2">
+                <div class="row-img">
                     <div class="col-img col-lg-4">
-                        <div class="card" style="width: 18rem;">
-                            <img src="Tabla 1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                          </div>
+                      <div class="card" style="width: 17.7rem;">
+                        <img src="Tabla 1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">¡OFERTA!</h5>
+                          <p class="card-text">Aproveche esta última unidad a tan solo $500.</p>
+                          <button type="button" class="agregarProducto2">Agregar al Carrito</button>
+                        </div>
+                      </div>
                     </div>
                     <div class="col-img col-lg-4">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card" style="width: 17.7rem;">
                             <img src="Bota.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <h5 class="card-title">¡OFERTA!</h5>
+                              <p class="card-text">Aproveche esta última unidad a tan solo $350.</p>
+                              <button type="button" class="agregarProducto2">Agregar al Carrito</button>
                             </div>
                           </div>
                     </div>
                     <div class="col-img col-lg-4">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card" style="width: 17.7rem;">
                             <img src="Tabla 2.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <h5 class="card-title">¡OFERTA!</h5>
+                              <p class="card-text">Aproveche esta última unidad a tan solo $500.</p>
+                              <button type="button" class="agregarProducto2">Agregar al Carrito</button>
                             </div>
                           </div>
                     </div>
                 </div>
             </div>
-            <div class="col col-lg-4">
-                <button type="button" class="eliminarUltimo">Eliminar Último Producto (-)</button>
+            <div class="col-carrito col-lg-4">
+              <div>
+                <h4><span class="titulo-carrito">MI CARRITO</span></h4>
+              </div>
+              <div>       
+                <ul class="myList">     
+                </ul>
+              </div>
+              <div>
+                <button type="button" class="eliminarUltimo">Eliminar Último Producto</button>
+              </div>
+              <div>
+                <button type="button" class="eliminarOrden">Eliminar Producto en Orden:</button>
+                <input type="number" name="inputOrden" class="myInputOrden" placeholder="Nº">
+              </div>
+              <div>
                 <button type="button" class="vaciarCarrito">Vaciar Carrito</button>
+              </div>
+              <div>
                 <button type="button" class="calcularCompra">Calcular Compra</button>
-                <div>
-                    <input type="number" name="inputOrden" class="myInputOrden" placeholder="Nº de orden a eliminar">
-                </div>
-                <button type="button" class="eliminarOrden">Eliminar la tarea en orden:</button>
-                <div>       
-                    <h2>Listado del Carrito</h2>
-                    <ul class="myList">     
-                    </ul>
-                </div>
-                <div>
-                    <h3>LA COMPRA TOTAL ES DE: $<span class="compraTotal"></span></h3>
-                </div>
+              </div>                  
+              <div>
+                  <h5><span class="titulo-compra">LA COMPRA TOTAL ES DE: $<span class="compraTotal"></span></h5>
+              </div>
             </div>
         </div>
         <!--ACÁ VA EL FOOTER-->

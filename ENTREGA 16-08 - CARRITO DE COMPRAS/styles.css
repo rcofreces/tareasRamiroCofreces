@@ -1,6 +1,10 @@
-.container {
+.container-fluid {
     font-family: Verdana;
     font-size: 14px;
+}
+
+body {
+    background-color: rgb(0, 16, 75);
 }
 /* HEADER */
 
@@ -89,21 +93,117 @@
 
 /* CARRITO DE COMPRAS */
 
-/*
-
-input::placeholder {
-    font-size: 13px;
-    color: rgb(136, 136, 136);
-
+.row-carrito {
+    display: flex;
+    background-color: rgb(0, 16, 75);
+    color: white;
+    margin-top: 10px;
 }
 
-input[type]:focus {
-    background-color: rgb(245, 245, 245);
-    box-shadow: 0 0 2px rgb(255, 0, 136);
+.row-inputs {
+    display: flex;
+}
+
+.myInputProducto, .myInputPrecio, .myInputCantidad {
+    height: 25px;
+    width: 500px;
+    color: white;
+    background-color: rgb(0, 16, 75);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.myInputProducto::placeholder, .myInputPrecio::placeholder, .myInputCantidad::placeholder {
+    text-align: start;
+    color: white;
+    opacity: .5;
+}
+
+.myInputProducto[type]:focus, .myInputPrecio[type]:focus, .myInputCantidad[type]:focus {
+    background-color: rgb(0, 16, 75);
+    box-shadow: 0 0 10px rgb(94, 255, 41);
     outline: none;
 }
 
-*/
+.col-2 {
+    margin: auto;
+    
+}
+.agregarProducto, .agregarProducto2 {
+    background-color:rgb(0, 16, 75);
+    color: rgb(94, 255, 41);
+    font-weight: bold;
+    border: 2px solid rgb(94, 255, 41);
+    border-radius: 5px;
+}
+
+.row-img {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: rgb(0, 16, 75);
+    color:rgb(94, 255, 41);
+    text-align: center;
+    border: 2px solid rgb(94, 255, 41);
+    border-radius: 7px;
+}
+
+.col-carrito {
+    border-left: 3px solid rgb(94, 255, 41)
+}
+
+.titulo-carrito {
+    display: flex;
+    font-weight: bold;
+    text-decoration: underline;
+    justify-content: center;
+}
+
+.myList {
+    margin-top: 25px;
+    text-align: start;
+}
+
+.eliminarUltimo, .eliminarOrden, .vaciarCarrito, .calcularCompra {
+    background-color:rgb(0, 16, 75);
+    color: rgb(94, 255, 41);
+    font-weight: bold;
+    border: 2px solid rgb(94, 255, 41);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.myInputOrden {
+    height: 25px;
+    width: 50px;
+    color: white;
+    background-color: rgb(0, 16, 75);
+    margin-left: 10px;
+}
+
+.myInputOrden::placeholder {
+    text-align: start;
+    color: white;
+    opacity: .5;
+}
+
+.myInputOrden[type]:focus {
+    background-color: rgb(0, 16, 75);
+    box-shadow: 0 0 10px rgb(94, 255, 41);
+    outline: none;
+}
+
+.titulo-compra {
+    display: flex;
+    font-weight: bold;
+    justify-content: start;
+    margin-top: 20px;
+    margin-left: 20px;
+}
 
 /* FOOTER */
 
