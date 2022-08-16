@@ -9,22 +9,17 @@ body {
 }
 
 .container {
-    background-color: rgb(230, 230, 230);
     margin: 10px;
     display: grid;
     grid-gap: 10px;
-    grid-template-rows: repeat(5, auto);
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "header header header"
-                        "widget-1 content widget-3"
-                        "widget-1 content widget-4"
-                        "widget-2 content widget-4"
-                        "footer footer footer";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "col-1 col-2 col-3 col-4"
 }
 
-header, .widget-1, .widget-2, .content, .widget-3, .widget-4, footer {
+.col-1, .col-2, .col-3, .col-4 {
     background-color: #fff;
-    border: 2px solid #000;
+    border: 3px solid blue;
     border-radius: 10px;
     padding: 20px;
     display: flex;
@@ -33,58 +28,27 @@ header, .widget-1, .widget-2, .content, .widget-3, .widget-4, footer {
     font-weight: bold;
 }
 
-header {
-    background-color: #00301f;
-    color: #fff;
-    grid-area: header;
+.col-1 {
+    grid-area: col-1;
 }
 
-.widget-1 {
-    background-color: #006479;
-    color: #fff;
-    grid-area: widget-1;
-    height: 200px;
+.col-2 {
+    grid-area: col-2;
 }
 
-.widget-2 {
-    background-color: #55A8FD;
-    color: #fff;
-    grid-area: widget-2;
-    height: 100px;
+.col-3 {
+    grid-area: col-3;
 }
 
-.content {
-    background-color: red;
-    color: #fff;
-    grid-area: content;
-}
-
-.widget-3 {
-    background-color: #fd7100;
-    color: #fff;
-    grid-area: widget-3;
-    height: 100px;
-}
-
-.widget-4 {
-    background-color: #ffd153;
-    color: #fff;
-    grid-area: widget-4;
-    height: 200px;
-}
-
-footer {
-    background-color: #00301f;
-    color: #fff;
-    grid-area: footer;
+.col-4 {
+    grid-area: col-4;
 }
 
 @media screen and (max-width: 768px) {
     .container {
-        grid-template-areas: "header header header"
-        "widget-1 content widget-3"
-        "widget-1 content widget-4"
-        "widget-2 content widget-4"
-        "footer footer footer";
+        grid-template-areas: "col-1"
+        "col-2"
+        "col-3"
+        "col-4"
     }
 }
