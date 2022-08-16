@@ -1,0 +1,37 @@
+/* HTML: 
+Titulo
+3 divs con contenido, imagenes parrafos listas
+3 imputs con un boton al lado cada uno
+
+CSS
+titulos en negrita
+fondo de la pagina imagen de tandil (?
+textos adentro de los divs anteriores deben ser con fuente comic sans
+cambiar color de letra cuando se pase por arriba del titulo el mouse
+
+JS
+1er boton: poner una alerta con el texto del input
+2do boton: console.log(de la palabra que se puso en el input repetida 100 veces)
+3er boton: hacer aparecer un texto que este oculto en el tml
+BOOTSTRAP 
+bootstrap responsive a eleccion
+diferente formato de pagina en desktop y celular */
+
+body {
+    background-color: rgb(241, 241, 241);
+    font-family: monospace;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+h1:hover {
+    color: red;
+}
+
+.image {
+    text-align: center;
+}
