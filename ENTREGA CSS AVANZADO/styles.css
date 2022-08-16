@@ -1,26 +1,29 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 10;
 }
 
 body {
+    background-color: rgb(245, 235, 235);
     font-family: cursive;
     color: #000;
 }
 
 .container {
-    margin: 10px;
+    margin: 10px auto;   
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas: "col-1 col-2 col-3 col-4"
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header header header"
+    "sidebar-1 content-x sidebar-2"
+    "footer footer footer";
 }
 
-.col-1, .col-2, .col-3, .col-4 {
+header, .sidebar-1, .content-x, .sidebar-2, footer {
     background-color: #fff;
-    border: 3px solid blue;
-    border-radius: 10px;
+    border: 3px solid black;
+    border-radius: 5px;
     padding: 20px;
     display: flex;
     text-align: center;
@@ -28,27 +31,77 @@ body {
     font-weight: bold;
 }
 
-.col-1 {
-    grid-area: col-1;
+header {
+    background-color: #005c3c;
+    color: #fff;
+    grid-area: header;
 }
 
-.col-2 {
-    grid-area: col-2;
+.sidebar-1 {
+    background-color: #55A8FD;
+    color: #fff;
+    grid-area: sidebar-1;
 }
 
-.col-3 {
-    grid-area: col-3;
+.content-x {
+    background-color: #fd7100;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: content-x;
 }
 
-.col-4 {
-    grid-area: col-4;
+.sidebar-2 {
+    background-color: #55A8FD;
+    color: #fff;
+    grid-area: sidebar-2;
+}
+
+footer {
+    background-color: #005c3c;
+    color: #fff;
+    grid-area: footer;
 }
 
 @media screen and (max-width: 768px) {
     .container {
-        grid-template-areas: "col-1"
-        "col-2"
-        "col-3"
-        "col-4"
+        grid-template-areas: "header header header"
+        "sidebar-1 sidebar-1 sidebar-1"
+        "content-x content-x content-x"
+        "sidebar-2 sidebar-2 sidebar-2"
+        "footer footer footer";
     }
+}
+
+div > h3 {
+    text-decoration: line-through;
+    font-size: 30px;
+}
+
+div span {
+    color: black;
+}
+
+div + h2 {
+    font-size: 40px;
+    color:rgb(252, 0, 160);
+}
+
+div ~ p.underline{
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    font-size: 16px;
 }
