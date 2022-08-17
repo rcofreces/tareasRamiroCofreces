@@ -1,0 +1,18 @@
+.row {
+    display: flex;
+    border: 2px solid blue;
+    height: 100px;
+    justify-content: space-around;
+}
+
+.main-title, .main-buttons, .main-user {
+    border: 4px solid red;
+}
+
+.content-col-1, .content-col-2 {
+    border: 4px solid green;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3 {
+    border: 4px solid yellow;
+}
