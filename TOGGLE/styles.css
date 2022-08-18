@@ -1,0 +1,10 @@
+.ver {
+    visibility: visible;
+    color: white;
+    background-color: blue;
+    padding: 15px 15px;
+}
+    
+div {
+    visibility: hidden;
+}
