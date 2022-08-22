@@ -1,0 +1,26 @@
+body {
+    background-color: #ccc;
+}
+
+h1, h2 {
+    color: red;
+}
+
+div.resaltado > p {
+    font-weight: bold;
+}
+
+h1:hover {
+    color: blue;
+}
+
+.imgs {
+    width: 300px;
+    height: 300px;
+}
+
+.centrado {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
