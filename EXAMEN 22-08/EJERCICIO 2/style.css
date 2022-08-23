@@ -1,0 +1,57 @@
+body, input , button {
+    font-family: 'Kalam', cursive;
+    font-size: 20px;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+}
+
+input {
+    border: 2px solid #000;
+    border-radius: 5px;
+    width: 250px;
+    padding-left: 10px;
+    font-size: 20px;
+    background-color: rgba(204, 204, 204, .5);
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input::placeholder {
+    font-size: 14px;
+    text-align: end;
+}
+
+
+button {
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btnSumar, .btnRestar, .btnMultiplicar, .btnDividir {
+    width: 150px;
+    background-color: rgb(244, 194, 17);
+}
+.btnBorrar {
+    background-color: red;
+    width: 250px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    color: blue;
+}
