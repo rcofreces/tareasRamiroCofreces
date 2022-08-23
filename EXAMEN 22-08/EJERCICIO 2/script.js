@@ -10,7 +10,11 @@ let miH2 = document.querySelector(".resultado");
 let sumar = () => {
     let valor1 = parseFloat(miInput1.value);
     let valor2 = parseFloat(miInput2.value);
-    miH2.innerHTML = `EL RESULTADO ES: ${valor1 + valor2}`;
+    if (miInput1.value.length == 0 || miInput2.value.length == 0) {
+        miH2.innerHTML = "INGRESE AMBOS NÚMEROS";
+    } else {
+        miH2.innerHTML = `EL RESULTADO ES: ${valor1 + valor2}`;
+    }
     miInput1.value = "";
     miInput2.value = "";
 }
@@ -18,7 +22,11 @@ let sumar = () => {
 let restar = () => {
     let valor1 = parseFloat(miInput1.value);
     let valor2 = parseFloat(miInput2.value);
-    miH2.innerHTML = `EL RESULTADO ES: ${valor1 - valor2}`;
+    if (miInput1.value.length == 0 || miInput2.value.length == 0) {
+        miH2.innerHTML = "INGRESE AMBOS NÚMEROS";
+    } else {
+        miH2.innerHTML = `EL RESULTADO ES: ${valor1 - valor2}`;
+    }
     miInput1.value = "";
     miInput2.value = "";
 }
@@ -26,7 +34,11 @@ let restar = () => {
 let multiplicar= () => {
     let valor1 = parseFloat(miInput1.value);
     let valor2 = parseFloat(miInput2.value);
-    miH2.innerHTML = `EL RESULTADO ES: ${valor1 * valor2}`;
+    if (miInput1.value.length == 0 || miInput2.value.length == 0) {
+        miH2.innerHTML = "INGRESE AMBOS NÚMEROS";
+    } else {
+        miH2.innerHTML = `EL RESULTADO ES: ${valor1 * valor2}`;
+    }
     miInput1.value = "";
     miInput2.value = "";
 }
@@ -34,7 +46,13 @@ let multiplicar= () => {
 let dividir = () => {
     let valor1 = parseFloat(miInput1.value);
     let valor2 = parseFloat(miInput2.value);
-    miH2.innerHTML = `EL RESULTADO ES: ${valor1 / valor2}`;
+    if (miInput1.value.length == 0 || miInput2.value.length == 0) {
+        miH2.innerHTML = "INGRESE AMBOS NÚMEROS";
+    } else if (miInput2.value == 0) {
+        miH2.innerHTML = "NO PUEDE DIVIDIR POR CERO";
+    } else {
+        miH2.innerHTML = `EL RESULTADO ES: ${valor1 / valor2}`;
+    }
     miInput1.value = "";
     miInput2.value = "";
 }
